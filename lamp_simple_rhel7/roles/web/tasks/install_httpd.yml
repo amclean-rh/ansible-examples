@@ -10,6 +10,7 @@
    - git
    - libsemanage-python
    - libselinux-python
+   - firewalld
 
 - name: insert firewalld rule for httpd
   firewalld: port={{ httpd_port }}/tcp permanent=true state=enabled immediate=yes
