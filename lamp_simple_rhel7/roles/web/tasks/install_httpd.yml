@@ -12,6 +12,9 @@
    - libselinux-python
    - firewalld
 
+- name: firewalld service started
+  service: name=firewalld state=started enabled=yes
+
 - name: insert firewalld rule for httpd
   firewalld: port={{ httpd_port }}/tcp permanent=true state=enabled immediate=yes
 
