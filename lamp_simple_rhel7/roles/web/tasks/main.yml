@@ -1,3 +1,8 @@
 ---
+- name: Add Adam's SSH key
+  authorized_key: 
+    user: cloud-user
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDj1OFnrboalGp+OqYeuKTjzpkUSLGfOnsC/AsLodw5dD45IaB5AP6vLO6FrcHU1iyOe3U/ND5lRmo4REBLhEXzelPiFQ4/ScsZV/p3+WJ932HTa7EVnYyE2wMKe6+tmerz2U6co0NNbD0X+Dw9sTQ84wFF7oAmMhhADVF2mwCMAEGP2XyOi1eHDsLRedwAoBbuxQx/WMjqhvgJPj5pas5xUpPU9cmNldXXgqpLtrTut8PapnqcsCyDVILC28m/T5l7SA3YBd7X77ZHLghcGhh9SpqBjRsH5pvrrvdHyJFmFl3hbcNen8Q00tEs0jgYAU4oOM84gts1JSEuHkT/0MnB amclean@dhcp-32-46.ord.redhat.com"
+
 - include: install_httpd.yml
 - include: copy_code.yml
